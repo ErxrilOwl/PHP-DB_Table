@@ -10,8 +10,8 @@ Database is a class for database connection, disconnection, table creation and d
 	Database::createTable("product", "
 		CREATE TABLE IF NOT EXISTS product(
 		id 				INT(6) 			AUTO_INCREMENT,
-		name				VARCHAR(255) 	NOT NULL,
-		description 			VARCHAR(255) 	NULL,
+		name				VARCHAR(255) 		NOT NULL,
+		description 			VARCHAR(255) 		NULL,
 		price 				DECIMAL 		NOT NULL,
 		image 				LONGBLOB 		NULL,
 		created_at			TIMESTAMP,
