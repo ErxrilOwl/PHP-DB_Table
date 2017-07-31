@@ -9,19 +9,15 @@ Database is a class for database connection, disconnection, table creation and d
 ```php
 	Database::createTable("product", "
 		CREATE TABLE IF NOT EXISTS product(
-		id			 		INT(6) 			AUTO_INCREMENT,
-		hotel_id 			INT(6) 			NOT NULL,
+		id 					INT(6) 			AUTO_INCREMENT,
 		name				VARCHAR(255) 	NOT NULL,
 		description 		VARCHAR(255) 	NULL,
-		type 				VARCHAR(255) 	NOT NULL,
 		price 				DECIMAL 		NOT NULL,
-		qty 	 			INT(6) 			NULL,
 		image 				LONGBLOB 		NULL,
 		created_at			TIMESTAMP,
 		deleted_at			DATETIME		DEFAULT NULL,
 		
-		PRIMARY KEY(id),
-		FOREIGN KEY(hotel_id) REFERENCES hotel(id)
+		PRIMARY KEY(id)
 	)");
 
 ```
